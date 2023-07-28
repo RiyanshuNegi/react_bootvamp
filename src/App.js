@@ -1,24 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './Component/Navbar';
+import Footer from './Component/Footer';
+import React, {useState} from 'react';
 
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  const toggleBackground = () => {
+        setIsDarkMode((prevMode) => !prevMode);
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+      
+      <div className={isDarkMode ? 'dark-mode' : 'light-mode'}>
+        <h1>Color Toggle App</h1>
+        <button onClick={toggleBackground}>Toggle Background</button>
+      </div>
+    
+      </div>
   );
 }
 
