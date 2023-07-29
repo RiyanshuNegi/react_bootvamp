@@ -1,17 +1,18 @@
 
-.App{
-  width:100vw;
-  height:100vh;
-}
-
 .dark-mode {
   background-color: #333;
   color: #fff;
+  width:100vw;
+  height:100vh;
+  Padding:10px;
 }
 
 .light-mode {
-  background-color: #fff;
+  background-color: #b7b7b7;
+  Padding:10px;
   color: #333;
+  width:100vw;
+  height:100vh;
 }
 
 button {
@@ -23,3 +24,9 @@ button {
   cursor: pointer;
 }
 
+.greeting-card{
+  border: 2px dashed rgb(88, 88, 88);
+  margin: 20px;
+  padding: 10px
+
+}
